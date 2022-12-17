@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>STUDENT ENROLLMENT FORM</h2>
+<form id="empForm" method="get">
+<div class="form-group">
+<span><label for="stdId">ROLL NO</label> <label id="empIdMsg">
+</label></span>
+<input type="text" class="form-control"  name="empId" id="stdId"
+placeholder="Enter Employee ID" required onchange = "getEmp()">
+</div>
+<div class="form-group">
+<label for="empName">FULL Name:</label>
+<input type="text" class="form-control" id="stdName"
+placeholder="Enter Employee Name" name="empName">
+</div>
+<div class="form-group">
+<label for="empEmail">CLASS</label>
+<input type="email" class="form-control" id="stdM"
+placeholder="Enter Employee Email" name="empEmail">
+</div>
+    <div class="form-group">
+<label for="empEmail">ENROLLMENT DATE</label>
+<input type="text" class="form-control" id="stdEn"
+placeholder="Enter Employee Email" name="empEmail1">
+</div>
+    <div class="form-group">
+<label for="empEmail">ADDRESS</label>
+<input type="text" class="form-control" id="stdAd"
+placeholder="Enter Employee Email" name="empEmail2">
+</div>
+    <div class="form-group">
+<label for="text">BIRTH DATE</label>
+<input type="email" class="form-control" id="stdB"
+placeholder="Enter Employee Email" name="empEmail3">
+</div>
+<input type="button" class="btn btn-primary" id="empSave" value="Save"
+onclick="saveEmployee();">
+</form>
+</div>
+    <div class = "form-group text-center">
+        <button type ="button" class ='btn btn-lg btn-primary' id ='save' onclick='saveData()' disabled>save</button>
+        <button type ="button" class ='btn btn-lg btn-primary' id ='change' onclick='changeData()' disabled>change</button>
+        <button type ="button" class ='btn btn-lg btn-primary' id ='reset' onclick='resetForm()' disabled>reset</button>
+        
+    </div>
+    <script type = "text/javascript" src='http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js'></script>
+    <script type='text/javascript' src='js/newjavascript.js'></script>
+</body>
+</html>

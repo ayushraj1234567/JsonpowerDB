@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+      <input type ="button" class ="btn btn-primary" id ="empSave" value ="Save" onClick ="saveEmployee()"> </form>
+</div>
+    <script>
+        function saveEmployee(){
+            
+            
+            var jsonStr = validateAndGetFormData();
+                
+
+            if (jsonStr == ""){
+
+            return;
+                
+            
+
+
+
+}
+
+var putReqStr = createPUTRequest("90936861|-31948784479254824|90932362", jsonStr, "SAMPLE", "EMP-REL");
+
+alert(putReqStr);
+jQuery.ajaxSetup({async: false});
+
+var result0b1 = executeCommand(putRegstr,
+
+"http://api.login2explore.com:5577 /api/1m1"); 
+alert(JSON.stringify (resultobj));
+JQuery.ajaxSetup ({async: true});
+
+resetForm();
+
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
+
